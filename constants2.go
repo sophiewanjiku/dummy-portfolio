@@ -5,15 +5,20 @@ import (
 )
 
 // a simple application to show the use of enumerated constants.
-const(
+const (
 	catSpecialist = iota
 	dogSpecialist
 	cowSpecialist
 )
 
+func main() {
 
-func main(){
-	var animalSpecialist = 
-	fmt .Printf(" ")
-
+	var specialistType int = catSpecialist
+	fmt.Printf("%v", specialistType == catSpecialist)
 }
+
+/*  operations that can be determined at compile time are allowed.
+they include : arithmetic
+            : bitwise operations
+			: bit shifting
+*/

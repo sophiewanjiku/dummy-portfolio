@@ -23,17 +23,17 @@ const (
 func main() {
 	//typed contsants. include the data type of the constants
 	const myConst int = 42
-	fmt.Printf("%v, %T\n", myConst, myConst)
+	fmt.Printf("myConst:\n %v, %T\n", myConst, myConst)
 
 	// untyped constants
 	const a = 27
-	fmt.Printf("%v, %T\n", a, a)
+	fmt.Printf("a:\n %v, %T\n", a, a)
 
 	// arithmetic operations on constants
-	fmt.Printf("%v, %T\n", myConst+a, myConst+a)
+	fmt.Printf("sum= %v, %T\n", myConst+a, myConst+a)
 
 	//printing enumerated constants
-	fmt.Printf("%v\n", i)
-	fmt.Printf("%v\n", j)
-	fmt.Printf("%v\n", k)
+	fmt.Printf("i: %v\n", i)
+	fmt.Printf("j: %v\n", j)
+	fmt.Printf("k: %v\n", k)
 }
